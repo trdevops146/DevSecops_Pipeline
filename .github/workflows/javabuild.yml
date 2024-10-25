@@ -32,3 +32,17 @@ jobs:
         with:
           name: jar
           path: target/*.jar
+      - name: Install JFrog CLI
+        run: |
+            curl -fL https://getcli.jfrog.io | sh
+            sudo mv jfrog /usr/local/bin/
+        
+        # Configure JFrog CLI with the token
+      - name: Configure JFrog CLI
+        run: |
+            jfrog config add my-artifactory --url=https://trial42aeja.jfrog.io --apikey=${{ secrets.JFROG_TOKEN }}
+        
+        # Upload .jar file to JFrog Artifactory
+      - name: Upload JAR to JFrog
+        run: |
+            jfrog rt upload "target/*.jar" "petjfrog-repo/"     
