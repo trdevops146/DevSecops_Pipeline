@@ -38,9 +38,9 @@ jobs:
     #         sudo mv jfrog /usr/local/bin/
         
     #     # Configure JFrog CLI with the token
-      - name: Configure JFrog CLI
-        run: |
-            jfrog config add my-artifactory --url=https://trial42aeja.jfrog.io --apikey=${{ secrets.JFROG_TOKEN }}
+    #   - name: Configure JFrog CLI
+    #     run: |
+    #         jfrog config add my-artifactory --url=https://trial42aeja.jfrog.io --apikey=${{ secrets.JFROG_TOKEN }}
       - name: Configure JFrog CLI
         uses: jfrog/setup-jfrog-cli@v3
         with:
