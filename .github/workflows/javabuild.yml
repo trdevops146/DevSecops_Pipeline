@@ -34,6 +34,7 @@ jobs:
           path: target/*.jar
         
     #   - name: Configure JFrog CLI
+    # token eyJ2ZXIiOiIyIiwidHlwIjoiSldUIiwiYWxnIjoiUlMyNTYiLCJraWQiOiJsN1NMMDlhOG9TcDJ2TmQ4ZHZNT2R1dVRaMVhySjVIcE1EVUxJOU9KWGdFIn0.eyJzdWIiOiJqZmFjQDAxamhzbW42N3F0bTBuMDQ4anh3eXQxZ2V6L3VzZXJzL3NodWtsYWFua2l0MzQ2QGdtYWlsLmNvbSIsInNjcCI6ImFwcGxpZWQtcGVybWlzc2lvbnMvYWRtaW4iLCJhdWQiOiIqQCoiLCJpc3MiOiJqZmZlQDAxamhzbW42N3F0bTBuMDQ4anh3eXQxZ2V6IiwiaWF0IjoxNzM3MTg3ODQ1LCJqdGkiOiJiOWRkMDRjNS02ZWVjLTRlOGYtYmJkMi00YjY1MjkxZDY2YzgiLCJ0aWQiOiJhMGh2dXFvMDV5cnZuIn0.pyK0zf9vVe-CaMRVyig-7t1RqQ1dN1PRYwFuNv7mvHswedtpI2Pd1UHsICiSW05f72ZlMowizHRZKDObL-YGTLOdfV3bfMkn28l_Z7pNYC7cUMdsuI2SVAX5o0SbsCURslwVoSx13hMwW_FAdvb60t41OqYS3P4xa0G69wUnESbg7CFHZSGVoJnuuD3nU4n4hZrQPOtmERaayfukWHNsvC8c1tOVFn7X8O0k-8aYlO5uPHyD6p3s-DP0f3mVoD7yAopy2ob1pWTx3NvTi9vthJiLUYAsaYe8YFf90XYlUq81xrqk3yWDXUlZqLaAOnIcyerxUembKajuMG5hFpg5Ww
     #     run: |
     #         jfrog config add my-artifactory --url=https://trial42aeja.jfrog.io --apikey=${{ secrets.JFROG_TOKEN }}
       - name: Configure JFrog CLI
