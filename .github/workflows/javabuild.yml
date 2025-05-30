@@ -34,7 +34,7 @@ jobs:
       #     path: target/*.jar
         
     #   - name: Configure JFrog CLI
-    # token 
+    # token
     #     run: |
     #         jfrog config add my-artifactory --url=https://trial42aeja.jfrog.io --apikey=${{ secrets.JFROG_TOKEN }}
       - name: Configure JFrog CLI
